@@ -1,0 +1,55 @@
+.animate__animated.animate__delay-015s {
+	-webkit-animation-delay: 0.15s;
+	animation-delay: 0.15s;
+}
+
+.animate__animated.animate__delay-025s {
+	-webkit-animation-delay: 0.25s;
+	animation-delay: 0.25s;
+}
+
+.animate__animated.animate__delay-05s {
+	-webkit-animation-delay: 0.5s;
+	animation-delay: 0.5s;
+}
+
+.animate__animated.animate__delay-075s {
+	-webkit-animation-delay: 0.75s;
+	animation-delay: 0.75s;
+}
+
+.animate__animated.animate__delay-1s {
+	-webkit-animation-delay: 1s;
+	animation-delay: 1s;
+}
+
+.landing-header {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("/assets/bg.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.landing-nav {
+  position: -webkit-sticky !important; /* Safari */
+  position: sticky !important;
+  top: 0;
+}
+
+.landing-nav .navbar-nav {
+  overflow: auto;
+  white-space: nowrap;
+}
+
+.card.bg-fill {
+  background: linear-gradient(270deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.8) 25%, rgba(0,0,0,0) 100%),
+  url("/assets/cities/madrid.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
