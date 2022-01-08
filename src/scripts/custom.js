@@ -18,7 +18,7 @@ function switchMenuActive(hash) {
   newLink.focus();
 }
 
-observer = new IntersectionObserver((entries) => {
+var observer = new IntersectionObserver((entries) => {
   if (entries.length == 1) {
     var hash = entries[0].target.getAttribute("id");
     switchMenuActive(hash);
