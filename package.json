@@ -2,21 +2,19 @@
   "name": "landing",
   "description": "The Hermes landing page",
   "version": "0.0.0",
-  "main": "dist/my-element.es.js",
-  "exports": {
-    ".": "./dist/my-element.es.js"
-  },
+  "main": "src/index.html",
   "files": [
     "dist"
   ],
   "scripts": {
     "dev": "vite src/",
-    "build": "rm -rf dist/ && vite build && mv src/dist/ dist/ && cp -r src/scripts/ dist/scripts/"
+    "build": "rm -rf dist/ && vite build -c vite.config.js src/ && mv src/dist/ dist/ && cp -r src/assets/* dist/assets/"
   },
   "dependencies": {
-    "@lit/localize": "^0.11.1",
     "animate.css": "^4.1.1",
-    "lit": "^2.0.2"
+    "halfmoon": "^1.1.1",
+    "lit": "^2.0.2",
+    "mustache": "^4.2.0"
   },
   "devDependencies": {
     "@lit/localize-tools": "^0.5.0",
