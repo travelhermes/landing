@@ -28,3 +28,9 @@ var observer = new IntersectionObserver((entries) => {
 sections.forEach((image) => {
   observer.observe(image);
 });
+
+/* Add menu bar events */
+document.querySelector('#menu-recomendations').addEventListener('click', () => { switchMenuActive('recomendations') });
+document.querySelector('#menu-planner').addEventListener('click', () => { switchMenuActive('planner') });
+document.querySelector('#menu-community').addEventListener('click', () => { switchMenuActive('community') });
+document.querySelector('#menu-cities').addEventListener('click', () => { switchMenuActive('cities') });
