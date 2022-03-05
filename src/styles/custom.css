@@ -36,7 +36,13 @@ html {
   background-size: cover;
   display: flex;
   justify-content: center;
-  align-items: center;
+  /*align-items: center;*/
+}
+
+.landing-header .browser {
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
 }
 
 .landing-nav {
@@ -56,4 +62,24 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.recomendations {
+  background: rgb(8,127,91);
+  background: linear-gradient(135deg, rgba(8,127,91,1) 0%, rgba(18,184,134,1) 100%); 
+  border-bottom: 5px solid white;
+  z-index: 10;
+}
+
+.planner {
+  background: rgb(28,126,214);
+  background: linear-gradient(135deg, rgba(28,126,214,1) 0%, rgba(51,154,240,1) 100%); 
+  border-bottom: 5px solid white;
+  z-index: 10;
+}
+
+.community {
+  background: rgb(90,32,105);
+  background: linear-gradient(135deg, rgba(90,32,105,1) 0%, rgba(204,93,232,1) 100%); 
+  z-index: 10;
 }
