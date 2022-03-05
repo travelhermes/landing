@@ -20,12 +20,12 @@
     <!-- Lit Modules -->
     
     
-    <script type="module" crossorigin src="/assets/index.5fab9da2.js"></script>
+    <script type="module" crossorigin src="/assets/index.955b199d.js"></script>
     <link rel="modulepreload" href="/assets/vendor.0c7781d4.js">
-    <link rel="stylesheet" href="/assets/index.64ee4c66.css">
+    <link rel="stylesheet" href="/assets/index.d1d035a4.css">
   </head>
 
-  <body class="with-custom-webkit-scrollbars with-custom-css-scrollbars" data-dm-shortcut-enabled="true" data-set-preferred-mode-onload="true">
+  <body class="with-custom-webkit-scrollbars with-custom-css-scrollbars dark-mode">
     <!-- Modals -->
 
     <div class="page-wrapper">
@@ -33,31 +33,19 @@
 
       <div class="content-wrapper">
         <div class="landing-header">
-          <div class="text-center text-white container-fluid mx-md-20">
-            <div class="row">
-              <div class="col-md-5 d-block d-md-none">
-                <img src="/assets/logo_light_256.22a76598.png" class="w-md-auto w-100" alt="hermes logo" />
-              </div>
-              <div class="col-md-7 px-10">
-                <h1 class="mb-0 animate__animated animate__fadeInUp">Elige una ciudad.<br /></h1>
-                <h1 class="mt-0 animate__animated animate__fadeInUp animate__delay-015s"><b class="">Hermes</b> te ayuda con el resto.</h1>
-                <p class="mx-20 animate__animated animate__fadeIn animate__delay-025s">
-                  Descubre lugares con recomendaciones personalizadas, y relájate mientras hacemos fácil la tarea más tediosa de todo viaje: planificarlo.
-                </p>
-              </div>
-              <div class="col-md-5 d-none d-md-block">
-                <img src="/assets/logo_light_256.22a76598.png" class="w-md-auto w-100 animate__animated animate__fadeInUp" alt="hermes logo" />
-              </div>
-            </div>
-            <hr class="mx-20" />
+          <div class="text-center text-white mt-20 mx-15">
+            <img src="/assets/logo_light_256.22a76598.png" height="80" alt="hermes logo" />
+            <h1 class="mb-0 animate__animated animate__fadeInUp">Elige una ciudad. <b class="">Hermes</b> te ayuda con el resto.</h1>
+            <p class="animate__animated animate__fadeIn animate__delay-025s">
+              Descubre lugares con recomendaciones personalizadas, y relájate mientras hacemos fácil la tarea más tediosa de todo viaje: planificarlo.
+            </p>
             <div class="mt-20 animate__animated animate__fadeInUp animate__delay-05s">
-              <a href="#recomendations" class="btn btn-lg btn-primary mb-5"> Descubre más <i class="fas fa-arrow-down ml-10"></i> </a>
-              <br />
+              <a href="#recomendations" class="btn btn-primary mb-5 mr-5"> Descubre más <i class="fas fa-arrow-down ml-10"></i></a>
               <!--a href="https://app.travelhermes.com/signup" class="btn mt-5">Empezar a usar <i class="fas fa-arrow-right ml-10"></i></a-->
-              <btn class="btn mt-5 disabled" disabled>Empezar a usar <i class="fas fa-arrow-right ml-10"></i></btn>
-              <p>¡Hermes se está reinventando! Actualmente el servicio no está disponible, pero puedes seguir su <a href="https://status.travelhermes.com"> estado aquí</a>.</p>
+              <!--<p>¡Hermes se está reinventando! Actualmente el servicio no está disponible, pero puedes seguir su <a href="https://status.travelhermes.com"> estado aquí</a>.</p>-->
             </div>
           </div>
+          <img src="/assets/browser_1.56f027b2.png" class="browser w-full">
         </div>
 
         <nav class="navbar landing-nav z-50">
@@ -83,137 +71,139 @@
           </div>
         </nav>
 
-        <a id="recomendations" class="mb-20 invisible anchor">.</a>
-        <div class="w-md-three-quarter text-center my-20 py-20 text-white-dm text-dark-lm mx-md-auto mx-20">
-          <h1 class="font-weight-bold mb-0">Recomendaciones</h1>
-          <h4 class="my-0 text-muted">
-            ¿Destino desconocido? Deja que te mostremos lugares que
-            <b class="text-white-dm text-dark-lm">sabemos</b> que te van gustar.
-          </h4>
-          <p class="mt-10 mx-20 mb-20 pb-20">
-            Hermes aprende sobre los lugares que tú y el resto de usuarios visitais y puntuais para recomendarte a tí y a otros usuarios nuevos lugares a visitar en los destinos
-            que selecciones. Así, podrás saber que visitar en tu próximo viaje o descubrir lugares que no conocias en destinos que ya has visitado.
-          </p>
+        <div class="recomendations text-white">
+          <a id="recomendations" class="mb-20 invisible anchor">.</a>
+          <div class="w-md-three-quarter text-center my-20 py-20 text-white-dm text-dark-lm mx-md-auto mx-20">
+            <h1 class="font-weight-bold mb-0">Recomendaciones</h1>
+            <h4 class="my-0">
+              ¿Destino desconocido? Deja que te mostremos lugares que
+              <b class="text-white-dm text-dark-lm">sabemos</b> que te van gustar.
+            </h4>
+            <p class="mt-10 mx-20 mb-20 pb-20">
+              Hermes aprende sobre los lugares que tú y el resto de usuarios visitais y puntuais para recomendarte a tí y a otros usuarios nuevos lugares a visitar en los destinos
+              que selecciones. Así, podrás saber que visitar en tu próximo viaje o descubrir lugares que no conocias en destinos que ya has visitado.
+            </p>
 
-          <feature-card
-            title="Explora"
-            subtitle="Explora visualmente que lugares hay en tu destino."
-            content="El mapa interactivo te permite explorar visualmente las recomendaciones de Hermes y donde están situados los lugares en tu destino."
-            image="/assets/features/map.png"
-            shadow="true"
-            alignment="right"
-          ></feature-card>
+            <feature-card
+              title="Explora"
+              subtitle="Explora visualmente que lugares hay en tu destino."
+              content="El mapa interactivo te permite explorar visualmente las recomendaciones de Hermes y donde están situados los lugares en tu destino."
+              image="/assets/features/map.png"
+              shadow="true"
+              alignment="right"
+            ></feature-card>
 
-          <feature-card
-            title="Detalla"
-            subtitle="Visualiza más información sobre el lugar que has seleccionado."
-            content="Descripción, página web, teléfono de contacto, redes sociales. Lo tenemos todo. El panel de información te permite obtener más información sobre el lugar, desde
-            una descripción del lugar hasta como contactarlo."
-            image="/assets/features/details.png"
-            shadow="false"
-            alignment="right"
-          ></feature-card>
+            <feature-card
+              title="Detalla"
+              subtitle="Visualiza más información sobre el lugar que has seleccionado."
+              content="Descripción, página web, teléfono de contacto, redes sociales. Lo tenemos todo. El panel de información te permite obtener más información sobre el lugar, desde
+              una descripción del lugar hasta como contactarlo."
+              image="/assets/features/details.png"
+              shadow="false"
+              alignment="right"
+            ></feature-card>
+          </div>
         </div>
 
-        <hr />
+        <div class="planner text-white">
+          <a id="planner" class="mb-20 invisible anchor">.</a>
+          <div class="w-md-three-quarter text-center my-20 py-20 text-white-dm text-dark-lm mx-auto px-15">
+            <h1 class="font-weight-bold mb-0">Planificador</h1>
+            <h4 class="my-0">
+              Saber cuando abren todos los museos es complicado. Nosotros te ayudamos con <b class="text-white-dm text-dark-lm">eso</b> y
+              <b class="text-white-dm text-dark-lm">mucho más</b>.
+            </h4>
+            <p class="mt-10 mx-20">
+              Nuestros datos curados y los potentes algoritmos de inteligencia artificial permiten que Hermes planifique tus viajes fácilmente, mostrándote cuando y que visitar en el
+              destino que has elegido. Y si algo no te convence, siempre puedes editarlo.
+            </p>
 
-        <a id="planner" class="mb-20 invisible anchor">.</a>
-        <div class="w-md-three-quarter text-center my-20 py-20 text-white-dm text-dark-lm mx-auto px-15">
-          <h1 class="font-weight-bold mb-0">Planificador</h1>
-          <h4 class="my-0 text-muted">
-            Saber cuando abren todos los museos es complicado. Nosotros te ayudamos a <b class="text-white-dm text-dark-lm">organizar</b> y
-            <b class="text-white-dm text-dark-lm">planificar</b> todo.
-          </h4>
-          <p class="mt-10 mx-20">
-            Nuestros datos curados y los potentes algoritmos de inteligencia artificial permiten que Hermes planifique tus viajes fácilmente, mostrándote cuando y que visitar en el
-            destino que has elegido. Y si algo no te convence, siempre puedes editarlo.
-          </p>
+            <feature-card
+              title="Selecciona"
+              subtitle="Elige los lugares que quieras visitar."
+              content="Para crear un nuevo intinerario, tan solo tienes que seleccionar los lugares que quieres visitar. Click, click, añandido."
+              image="/assets/features/select.png"
+              shadow="false"
+              alignment="left"
+            ></feature-card>
 
-          <feature-card
-            title="Selecciona"
-            subtitle="Elige los lugares que quieras visitar."
-            content="Para crear un nuevo intinerario, tan solo tienes que seleccionar los lugares que quieres visitar. Click, click, añandido."
-            image="/assets/features/select.png"
-            shadow="false"
-            alignment="left"
-          ></feature-card>
+            <feature-card
+              title="Crea"
+              subtitle="Deja que generemos tu plan automáticamente."
+              content="Indica donde te vas a alojar y cuanto va a durar tu viaje y Hermes se encargará de planearlo todo automáticamente."
+              image="/assets/features/plan.png"
+              shadow="false"
+              alignment="left"
+            ></feature-card>
 
-          <feature-card
-            title="Crea"
-            subtitle="Deja que generemos tu plan automáticamente."
-            content="Indica donde te vas a alojar y cuanto va a durar tu viaje y Hermes se encargará de planearlo todo automáticamente."
-            image="/assets/features/plan.png"
-            shadow="false"
-            alignment="left"
-          ></feature-card>
-
-          <feature-card
-            title="Gestiona"
-            subtitle="Visualiza, edita y elimina los planes que hayas creado"
-            content="Podrás ver los itinerarios que has generado, editarlos, añadir notas e incluso eliminarlos fácilmente."
-            image="/assets/features/manage.png"
-            shadow="true"
-            alignment="left"
-          ></feature-card>
+            <feature-card
+              title="Gestiona"
+              subtitle="Visualiza, edita y elimina los planes que hayas creado"
+              content="Podrás ver los itinerarios que has generado, editarlos, añadir notas e incluso eliminarlos fácilmente."
+              image="/assets/features/manage.png"
+              shadow="true"
+              alignment="left"
+            ></feature-card>
+          </div>
         </div>
 
-        <hr />
+        <div class="community text-white">
+          <a id="community" class="mb-20 invisible anchor">.</a>
+          <div class="w-md-three-quarter text-center my-20 py-20 text-white-dm text-dark-lm mx-auto px-15">
+            <h1 class="font-weight-bold mb-0">Comunidad y Open Source</h1>
+            <h4 class="my-0">
+              ¿Ese lugar no te ha gustado?
+              <b class="text-white-dm text-dark-lm">Puntúalo</b>. ¿Los horarios de un sitio estaban mal? <b class="text-white-dm text-dark-lm">Notifícanoslo</b>.
+            </h4>
+            <p class="mt-10 mx-20">
+              Un proyecto no es nada sin personas detrás. Las puntaciones y comentarios de nuestros usuarios ayudan a que Hermes recomiende mejor. Y el que el proyecto sea Open
+              Source nos permite que cualquiera pueda ayudar a corregir errores y proponer nuevas funcionalidades.
+            </p>
 
-        <a id="community" class="mb-20 invisible anchor">.</a>
-        <div class="w-md-three-quarter text-center my-20 py-20 text-white-dm text-dark-lm mx-auto px-15">
-          <h1 class="font-weight-bold mb-0">Comunidad y Open Source</h1>
-          <h4 class="my-0 text-muted">
-            ¿Ese lugar no te ha gustado?
-            <b class="text-white-dm text-dark-lm">Puntúalo</b>. ¿Los horarios de un sitio estaban mal? <b class="text-white-dm text-dark-lm">Notifícanoslo</b>.
-          </h4>
-          <p class="mt-10 mx-20">
-            Un proyecto no es nada sin personas detrás. Las puntaciones y comentarios de nuestros usuarios ayudan a que Hermes recomiende mejor. Y el que el proyecto sea Open
-            Source nos permite que cualquiera pueda ayudar a corregir errores y proponer nuevas funcionalidades.
-          </p>
+            <feature-card
+              title="Puntua"
+              subtitle="Valora tu experiencia."
+              content="Valora los lugares que has visitado para mejorar las recomendaciones para tí y para otros usuarios."
+              image="/assets/features/ratings.png"
+              shadow="true"
+              alignment="right"
+            ></feature-card>
 
-          <feature-card
-            title="Puntua"
-            subtitle="Valora tu experiencia."
-            content="Valora los lugares que has visitado para mejorar las recomendaciones para tí y para otros usuarios."
-            image="/assets/features/ratings.png"
-            shadow="true"
-            alignment="right"
-          ></feature-card>
-
-          <feature-card
-            title="Contribuye"
-            subtitle="Ayuda a mejorar la experiencia para todos."
-            content="El código es abierto, por lo que podrás contribuir con mejoras y arreglos, o con propuestas."
-            image="/assets/features/github.png"
-            shadow="true"
-            alignment="left"
-            buttonLink="https://github.com/SrGMC/hermes"
-            buttonText="GitHub"
-            buttonIcon="fab fa-github"
-          ></feature-card>
+            <feature-card
+              title="Contribuye"
+              subtitle="Ayuda a mejorar la experiencia para todos."
+              content="El código es abierto, por lo que podrás contribuir con mejoras y arreglos, o con propuestas."
+              image="/assets/features/github.png"
+              shadow="true"
+              alignment="left"
+              buttonLink="https://github.com/SrGMC/hermes"
+              buttonText="GitHub"
+              buttonIcon="fab fa-github"
+            ></feature-card>
+          </div>
         </div>
 
-        <hr />
+        <div class="cities">
+          <a id="cities" class="mb-20 invisible anchor">.</a>
+          <div class="w-md-three-quarter text-center my-20 py-20 text-white-dm text-dark-lm mx-auto px-15">
+            <h1 class="font-weight-bold mb-0">Ciudades</h1>
+            <h4 class="my-0 text-muted">Estos son los destinos que están disponibles en Hermes.</h4>
+            <p class="mt-10 mx-20">
+              ¿Te falta alguno?
+              <a href="#"
+                >Propónlo <sup><i class="fas fa-external-link-alt"></i></sup
+              ></a>
+              o
+              <a href="#"
+                >añadelo tu mismo <sup><i class="fas fa-external-link-alt"></i></sup></a
+              >.
+            </p>
 
-        <a id="cities" class="mb-20 invisible anchor">.</a>
-        <div class="w-md-three-quarter text-center my-20 py-20 text-white-dm text-dark-lm mx-auto px-15">
-          <h1 class="font-weight-bold mb-0">Ciudades</h1>
-          <h4 class="my-0 text-muted">Estos son los destinos que están disponibles en Hermes.</h4>
-          <p class="mt-10 mx-20">
-            ¿Te falta alguno?
-            <a href="#"
-              >Propónlo <sup><i class="fas fa-external-link-alt"></i></sup
-            ></a>
-            o
-            <a href="#"
-              >añadelo tu mismo <sup><i class="fas fa-external-link-alt"></i></sup></a
-            >.
-          </p>
-
-          <div class="container-fluid text-right">
-            <div class="row row-eq-spacing">
-              <div class="col-md-6 my-10">
-                <city-item name="Madrid" state="Comunidad de Madrid, España" image="/assets/cities/madrid.jpg"></city-item>
+            <div class="container-fluid text-right">
+              <div class="row row-eq-spacing">
+                <div class="col-md-6 my-10">
+                  <city-item name="Madrid" state="Comunidad de Madrid, España" image="/assets/cities/madrid.jpg"></city-item>
+                </div>
               </div>
             </div>
           </div>
