@@ -15,7 +15,7 @@ function switchMenuActive(hash) {
   newLink.classList.add("font-weight-bold");
   newLink.classList.add("text-white-dm");
   newLink.classList.add("text-dark-lm");
-  newLink.focus();
+  //newLink.focus();
 }
 
 var observer = new IntersectionObserver((entries) => {
