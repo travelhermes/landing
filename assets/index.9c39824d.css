@@ -40,7 +40,7 @@ html {
 
 .landing-header {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("/assets/bg.099dd5ea.jpg");
+    url("/assets/bg.9d57d0c2.jpg");
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -69,7 +69,7 @@ html {
 
 .card.bg-fill {
   background: linear-gradient(270deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.8) 25%, rgba(0,0,0,0) 100%),
-  url("/assets/madrid.2591744a.jpg");
+  url("/assets/madrid.a86ee734.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
