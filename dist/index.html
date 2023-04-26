@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Primary Meta Tags -->
+    <title>Hermes - Redirect</title>
+
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA3XAAAN1wFCKJt4AAAC0ElEQVRYw+1W3UuTYRT3X+miwIuiKIpCkEpERCS6CaWbzNkUtQ8yswX52cd1m1re2NTUTaZXhtlF3qSiczFj7stNN3Gbbs5N5/ADTvsdeIevuWb5sgh24PDs45zn/J5zfuc8T8aJk5n0LzUjDSAN4L8AcCrzNJVXVNKL+gZ639FB/RoN3SoqTuqXffU6VVZVs39SAGq1mnSDgzQ5OUn6mRlyu93k9Xppe3ubDpPwxgYV3rh56KadnR/I6/NRMBjkPSKRCFksFqp9WpcYwPy8QxQATnDG73q9nsxmM03H1mg0GrcZHv70y4awcTgcVPOklr8rFM/joNbW1jiDCUuQm5dP9Q2NZDB8p+XlZfLFTrG3t8fBdnZ2GNDS0pII5JWs7Lg/MoiTIuV3Su6Sc2GB7b6OjdG5CxfpnrycQqEQPXj46PcckJdX0NDQEFmtVs7A7OwPBrS+vk67u7usgvT198d5Eg6HmRtKlYq2trZEGYU/eKTRaGMHNByNhM0tL0k7MMDpt9nsMUA28ng8IgB+v59tQVC73c6fv42PsyJjWOEP7e7uofyCQtrc3PyzLkBpEAB1Rfpwwv2laG9/x4r6CzyAQrACCBSHwf+QY8+Bazm53CkQrA2NTbEs2ZICyMsv4PJIMoiQGd/KCgd69foNt6asTE6jo19YwR2sExMTrD09H6m3t4+MRqN0k7BUVsbMnpqa5r43mUxx7hzUumcKthVaVLJR/FapZGIJ7QqyVlXfF9moWls5OLpA0rtAq9XGZ0UgEKCSUhnpdDoOtrrq59oD3OLiIjU2NUt3GZ05e57HtiAIdPB+wDxB9yQa2X8NABviRIKgJdHfKbmOH9fUcHoFQQvm5Oal5j3Q1tYumoIIjnmQkgfJyMhn0Wx3uVzHDn5kACDSfnE4nfzYSNmLCATD1Qsxzc3RpctZqX8TFhXfJnVXF7df+lWcBpAGIKX+BAmEfs4jWm3fAAAAAElFTkSuQmCC">
+  </head>
+  <body>
+    <p>Click here to visit the website in <a href="/en/">🇬🇧 English</a>.</p>
+    <p>Pulsa aquí para ver la web en <a href="/es/">🇪🇸 Español</a>.</p>
+    <script>
+      const host = `${location.origin}`;
+      const params = new URL(window.location).searchParams;
+      const trip = params.get('trip');
+      const browserLang = (navigator.language || navigator.userLanguage).match(
+        new RegExp('([a-z]{2})(-[a-zA-Z]{2}){0,1}')
+      )[1];
+      const userLang = localStorage.getItem('language');
+      const lang = userLang ? userLang : browserLang;
+
+      if (!userLang) {
+        localStorage.setItem('language', lang);
+      }
+
+      var newLocation = `${host}/${lang}/`;
+      if (trip) {
+        newLocation = `${host}/${lang}/trip?id=${trip}`;
+      }
+
+      window.location.href = newLocation;
+    </script>
+  </body>
+</html>
