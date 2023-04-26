@@ -10,25 +10,9 @@ jobs:
     steps:
     - name: Checkout repo
       uses: actions/checkout@v2
-    
-    - name: Use Node.js 16.x
-      uses: actions/setup-node@v2
-      with:
-        node-version: 16.x
-        cache: 'npm'
-    - name: Install dependencies
-      run: npm install
-        
-    - name: Build page
-      run: npm run build
       
     - name: Copy CNAME
       run: cp CNAME dist/CNAME
-      
-#    - name: Compress images
-#      uses: calibreapp/image-actions@main
-#      with:
-#        githubToken: ${{ secrets.GITHUB_TOKEN }}
         
     - name: Push to branch
       uses: s0/git-publish-subdir-action@develop
